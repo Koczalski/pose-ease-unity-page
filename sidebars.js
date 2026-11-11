@@ -14,6 +14,7 @@ const sidebars = {
     'comfort-analysis',
     'assist',
     'faq',
+    'credits',
     'changelog',
   ],
 };
