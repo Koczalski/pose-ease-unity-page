@@ -12,8 +12,8 @@ Assist is a feature in the Pose Controller window. It shows the load of the curr
 | Load markers on joints, with numbers | Available |
 | Estimated support and ground offset | Available |
 | List of the highest-load joints (top 5) | Available |
-| Slider that moves the pose toward a lower-load pose | <span class="status-planned">Planned</span> |
-| Muscle activity for a selected limb | <span class="status-planned">Planned</span> |
+| Slider that moves the pose toward a lower-load pose (Move toward natural) | Available |
+| Muscle activity for a selected limb | Available |
 | Updating the display while dragging | <span class="status-planned">Planned (after measurement and review)</span> |
 
 ## How to use it
@@ -21,6 +21,10 @@ Assist is a feature in the Pose Controller window. It shows the load of the curr
 1. In the **Assist (analysis)** section of the Pose Controller window, turn on the option. It is off by default.
 2. Enter the body size: height, weight, and sex. The defaults are 1.60 m, 50 kg, and female. This body size is kept separately from Comfort Analysis.
 3. Move the pose. The analysis runs once, when you release the drag. It also runs after Undo and Redo.
+4. Select an arm or leg controller in the Scene view. The **selected limb's muscles** area shows that limb's muscle activity (top 5).
+5. In **Move toward natural**, press the button to find an easier pose. The tool builds a path from the current pose toward lower-load poses and shows a translucent ghost. The avatar does not move yet.
+6. Move the amount slider to check the ghost. 0 is the current pose and 1 is the end of the path. The load at that point is shown.
+7. Press Apply to put the pose on the avatar. One Undo brings it back. Limbs that were in IK stay in IK. Discard removes only the path and the ghost.
 
 ## What the display means
 
@@ -28,12 +32,17 @@ Assist is a feature in the Pose Controller window. It shows the load of the curr
 - **Estimated support**: When no floor or object surface supports the body, for example when sitting on nothing, the tool estimates a supporting surface and shows it. The estimated support is listed separately from the result.
 - **Ground offset**: The vertical distance the analysis moved the body to meet the floor. A note appears above 1 cm.
 - **Bone reproduction error**: The gap between the analysis model's body and the Rig Controller's bone positions. Above 3 cm, it is treated as a reference value only.
+- **Selected limb's muscles**: The joint load distributed over the muscles of a standard musculoskeletal model. Arms use OpenSim Arm26 (shoulder and elbow flexion and extension, 6 muscles). Legs use Rajagopal 2016. The calculation is the same as the muscle-level sections of Comfort Analysis.
+- **Move toward natural**: The path is built the same way as in Comfort Analysis. Assist does not use nearby poses from the pose collection (typical postures) or LLM suggestions.
 
 ## Notes
 
 - Analysis runs only when you release the drag. The numbers do not change while you drag.
 - The numbers depend on assumptions: the body size and the level boundaries. Do not use them for medical or workplace decisions.
 - The body is assumed to be upright. If the root is strongly tilted, the analysis does not run and the reason is shown.
+- When you move the pose, the path and the ghost are removed. Press the button again to build a new one.
+- When you apply, a limb with an IK weight between 0 and 1 becomes FK.
+- The analysis moves the body up or down to meet the floor (the ground offset). The ghost and the applied pose differ in height from the current avatar by that amount.
 
 ## Screenshots
 
@@ -41,9 +50,17 @@ Assist is a feature in the Pose Controller window. It shows the load of the curr
 
 *Assist enabled: load markers (white to magenta) and percentages on joints.*
 
-![The Assist section: max load, inferred supports, grounding shift, and more.](/img/screens/assist-window.png)
+![The Assist section: max load, inferred supports, grounding shift, highest-load joints, and the muscles of the selected limb (right arm).](/img/screens/assist-window.png)
 
-*The Assist section: max load, inferred supports, grounding shift, and more.*
+*The Assist section: max load, inferred supports, grounding shift, highest-load joints, and the muscles of the selected limb (right arm).*
+
+![After finding an easier pose: the ghost (translucent blue) at amount 1. The raised left leg is lowered. The avatar itself has not moved yet.](/img/screens/assist-path.png)
+
+*After finding an easier pose: the ghost (translucent blue) at amount 1. The raised left leg is lowered. The avatar itself has not moved yet.*
+
+![The Move toward natural area: the load of the moved pose (now 32% to minimum 16%), Apply, and Discard.](/img/screens/assist-path-window.png)
+
+*The Move toward natural area: the load of the moved pose (now 32% to minimum 16%), Apply, and Discard.*
 
 
 :::note About the images
