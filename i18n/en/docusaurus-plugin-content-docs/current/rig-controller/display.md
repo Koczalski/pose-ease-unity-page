@@ -1,0 +1,24 @@
+---
+title: Display settings and View Preset
+description: Handle appearance, labels, and View Preset, which switches the Scene view background and lighting.
+---
+
+## Appearance
+
+- **Style Preset**: Chooses a combination of appearance settings.
+- **Show**: Chooses which handle types are shown.
+- **Labels**: By default, a name label appears only on the hovered and selected joints. If you always show labels, the labels move outward from the body and stack vertically when they would overlap.
+
+## View Preset
+
+View Preset switches the Scene view background and lighting so the Rig Controller is easier to see. It does not change the scene file.
+
+- **As in scene (default)**: Uses the Scene view settings as they are.
+- **Neutral**: Turns off the Skybox, fog, and image effects. Keeps the scene lighting and grid.
+- **Flat**: Same as Neutral, and also turns off the scene lighting and the grid.
+
+Choose "As in scene", or press **Reset**, to restore the original settings.
+
+## Outline
+
+Each Rig Controller line has a dark edge with a light edge outside it, so it stays visible on both dark and light clothing.
