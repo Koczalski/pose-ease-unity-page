@@ -1,0 +1,68 @@
+---
+title: はじめに
+slug: /
+hide_title: true
+description: pose-ease-unity は、Unity エディタの中で VRChat 向けアバターのポーズを作り、その負荷を数値で確かめる拡張です。
+---
+
+<Hero
+  title="pose-ease-unity"
+  image="/img/screens/controllers-front.png"
+  imageAlt="Rig Controller のコントローラー（正面）。FK は細い輪、IK は箱、腰の Root は画面に正対した輪と矢印。"
+  actions={[
+    {label: 'インストール', to: '/install', primary: true},
+    {label: 'クイックスタート', to: '/quickstart'},
+  ]}>
+
+Unity エディタの中で、VRChat 向けの Humanoid アバターのポーズを作る拡張です。ポーズは Rig Controller を直接ドラッグして作ります。できあがったポーズが体にどれくらい負担をかけるかは、数値で確かめられます。
+
+</Hero>
+
+## できること
+
+<FeatureCards
+  items={[
+    {
+      title: 'Rig Controller',
+      to: '/rig-controller',
+      image: '/img/screens/drag-ik.png',
+      body: '腕、脚、体幹の関節を、シーン上の制御点で動かします。手足ごとに IK と FK を切り替えられ、左右のミラーもできます。',
+    },
+    {
+      title: 'アバターへの組み込み',
+      to: '/avatar-install',
+      image: '/img/screens/module-added.png',
+      body: 'アバターに制御用のコンポーネントを 1 つ足すと、アバターを選ぶだけで Rig Controller が出ます。',
+    },
+    {
+      title: 'Comfort Analysis',
+      to: '/comfort-analysis',
+      scale: '負荷率',
+      body: '今のポーズについて、関節ごとの負荷率を計算します。負担の小さい姿勢への経路も示します。',
+    },
+    {
+      title: 'アシスト（解析）',
+      to: '/assist',
+      image: '/img/screens/assist-path.png',
+      body: 'Pose Controller ウィンドウの中で、負荷と推定した支え、選んだ手足の筋を見られます。負担の小さい姿勢へ寄せることもできます。',
+    },
+  ]}
+/>
+
+<Status kind="planned">予定</Status> 指の操作と、ドラッグ中も負荷の表示を追従させること。詳しくは各ページの状態の表を見てください。
+
+## 対応環境
+
+- Unity 2022.3.22f1（Built-in Render Pipeline）
+- Humanoid のアバター（Animator と Avatar が設定されているもの）
+- ほかの Unity のバージョンや Render Pipeline では確かめていません。
+
+## 読み方
+
+はじめて使う人は、「インストール」「クイックスタート」の順に読んでください。数値の出典と仮定は、それぞれのページと [出典とライセンス](./credits) に書いてあります。
+
+## 画面の例
+
+<Figure src="/img/screens/labels-always.png" caption="ラベルを常に表示したところ。札は体の外に並び、細い線でコントローラーとつながる。" />
+
+<ImageCredit />

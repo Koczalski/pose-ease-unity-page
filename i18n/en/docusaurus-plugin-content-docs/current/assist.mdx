@@ -9,14 +9,16 @@ Assist is a feature in the Pose Controller window. It shows the load of the curr
 
 | Feature | Status |
 | --- | --- |
-| Load markers on joints, with numbers | Available |
-| Estimated support and ground offset | Available |
-| List of the highest-load joints (top 5) | Available |
-| Slider that moves the pose toward a lower-load pose (Move toward natural) | Available |
-| Muscle activity for a selected limb | Available |
-| Updating the display while dragging | <span class="status-planned">Planned (after measurement and review)</span> |
+| Load markers on joints, with numbers | <Status>Available</Status> |
+| Estimated support and ground offset | <Status>Available</Status> |
+| List of the highest-load joints (top 5) | <Status>Available</Status> |
+| Slider that moves the pose toward a lower-load pose (Move toward natural) | <Status>Available</Status> |
+| Muscle activity for a selected limb | <Status>Available</Status> |
+| Updating the display while dragging | <Status kind="planned">Planned (after measurement and review)</Status> |
 
 ## How to use it
+
+<Steps>
 
 1. In the **Assist (analysis)** section of the Pose Controller window, turn on the option. It is off by default.
 2. Enter the body size: height, weight, and sex. The defaults are 1.60 m, 50 kg, and female. This body size is kept separately from Comfort Analysis.
@@ -25,6 +27,8 @@ Assist is a feature in the Pose Controller window. It shows the load of the curr
 5. In **Move toward natural**, press the button to find an easier pose. The tool builds a path from the current pose toward lower-load poses and shows a translucent ghost. The avatar does not move yet.
 6. Move the amount slider to check the ghost. 0 is the current pose and 1 is the end of the path. The load at that point is shown.
 7. Press Apply to put the pose on the avatar. One Undo brings it back. Limbs that were in IK stay in IK. Discard removes only the path and the ghost.
+
+</Steps>
 
 ## What the display means
 
@@ -46,23 +50,16 @@ Assist is a feature in the Pose Controller window. It shows the load of the curr
 
 ## Screenshots
 
-![Assist enabled: load markers (white to magenta) and percentages on joints.](/img/screens/assist-scene.png)
+<Gallery>
 
-*Assist enabled: load markers (white to magenta) and percentages on joints.*
+<Figure src="/img/screens/assist-scene.png" caption="Assist enabled: load markers (white to magenta) and percentages on joints." />
 
-![The Assist section: max load, inferred supports, grounding shift, highest-load joints, and the muscles of the selected limb (right arm).](/img/screens/assist-window.png)
+<Figure src="/img/screens/assist-window.png" caption="The Assist section: max load, inferred supports, grounding shift, highest-load joints, and the muscles of the selected limb (right arm)." />
 
-*The Assist section: max load, inferred supports, grounding shift, highest-load joints, and the muscles of the selected limb (right arm).*
+<Figure src="/img/screens/assist-path.png" caption="After finding an easier pose: the ghost (translucent blue) at amount 1. The raised left leg is lowered. The avatar itself has not moved yet." />
 
-![After finding an easier pose: the ghost (translucent blue) at amount 1. The raised left leg is lowered. The avatar itself has not moved yet.](/img/screens/assist-path.png)
+<Figure src="/img/screens/assist-path-window.png" caption="The Move toward natural area: the load of the moved pose (now 32% to minimum 16%), Apply, and Discard." />
 
-*After finding an easier pose: the ghost (translucent blue) at amount 1. The raised left leg is lowered. The avatar itself has not moved yet.*
+</Gallery>
 
-![The Move toward natural area: the load of the moved pose (now 32% to minimum 16%), Apply, and Discard.](/img/screens/assist-path-window.png)
-
-*The Move toward natural area: the load of the moved pose (now 32% to minimum 16%), Apply, and Discard.*
-
-
-:::note About the images
-The avatar in the screenshots is the "Nayu" 3D model by Mito Arisaka (https://www.arisakamito.com/).
-:::
+<ImageCredit />

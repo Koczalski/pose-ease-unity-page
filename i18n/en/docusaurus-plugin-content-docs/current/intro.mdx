@@ -1,0 +1,68 @@
+---
+title: Introduction
+slug: /
+hide_title: true
+description: pose-ease-unity is a Unity editor extension for posing VRChat avatars and checking the load on the body.
+---
+
+<Hero
+  title="pose-ease-unity"
+  image="/img/screens/controllers-front.png"
+  imageAlt="The Rig Controller handles (front view). FK rings, IK boxes, and the camera-facing Root ring with arrows."
+  actions={[
+    {label: 'Install', to: '/install', primary: true},
+    {label: 'Quick start', to: '/quickstart'},
+  ]}>
+
+A Unity editor extension for posing Humanoid avatars for VRChat. You pose the avatar by dragging the Rig Controller in the Scene view, and then check, as numbers, how much load the pose puts on the body.
+
+</Hero>
+
+## What it does
+
+<FeatureCards
+  items={[
+    {
+      title: 'Rig Controller',
+      to: '/rig-controller',
+      image: '/img/screens/drag-ik.png',
+      body: 'Move the arms, legs, and torso with control handles in the Scene view. Each limb can switch between IK and FK, and you can mirror the pose left to right.',
+    },
+    {
+      title: 'Installing on an avatar',
+      to: '/avatar-install',
+      image: '/img/screens/module-added.png',
+      body: 'Add one control component to an avatar. After that, selecting the avatar shows the Rig Controller.',
+    },
+    {
+      title: 'Comfort Analysis',
+      to: '/comfort-analysis',
+      scale: 'Load ratio',
+      body: 'Calculates the load ratio of each joint for the current pose, and shows a path toward a lower-load pose.',
+    },
+    {
+      title: 'Assist (analysis)',
+      to: '/assist',
+      image: '/img/screens/assist-path.png',
+      body: 'Shows the load, the estimated support, and the muscles of a selected limb in the Pose Controller window. It can also move the pose toward a lower-load one.',
+    },
+  ]}
+/>
+
+<Status kind="planned">Planned</Status> Finger controls, and updating the load display while dragging. Each page shows the status.
+
+## Requirements
+
+- Unity 2022.3.22f1 (Built-in Render Pipeline)
+- A Humanoid avatar (with an Animator and an Avatar)
+- Other Unity versions and render pipelines have not been tested.
+
+## How to read these docs
+
+If this is your first time, read Install and then Quick start. The sources and assumptions behind the numbers are written on each page and in [Sources and Licenses](./credits).
+
+## Screenshots
+
+<Figure src="/img/screens/labels-always.png" caption="Always-on labels: placed outside the body and linked to each handle." />
+
+<ImageCredit />
