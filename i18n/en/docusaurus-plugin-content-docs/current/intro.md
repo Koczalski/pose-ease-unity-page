@@ -24,3 +24,18 @@ pose-ease-unity is a Unity editor extension for posing Humanoid avatars for VRCh
 ## How to read these docs
 
 If this is your first time, read Install and then Quick start. The sources and assumptions behind the numbers are written on each page.
+
+## Screenshots
+
+![The Rig Controller handles (front view). FK rings, IK boxes, and the camera-facing Root ring with arrows.](/img/screens/controllers-front.png)
+
+*The Rig Controller handles (front view). FK rings, IK boxes, and the camera-facing Root ring with arrows.*
+
+![Always-on labels: placed outside the body and linked to each handle.](/img/screens/labels-always.png)
+
+*Always-on labels: placed outside the body and linked to each handle.*
+
+
+:::note About the images
+The avatar in the screenshots is the "Nayu" 3D model by Mito Arisaka (https://www.arisakamito.com/).
+:::

@@ -27,3 +27,18 @@ Mirroring works on Unity's Humanoid muscle values, not joint angles, so differen
 ## Known limits
 
 - With mirroring and Apply Pose, bones such as the fingers may not return on Undo.
+
+## Screenshots
+
+![The Details (IK Weight) foldout.](/img/screens/window-detail.png)
+
+*The Details (IK Weight) foldout.*
+
+![After mirroring the whole pose.](/img/screens/mirror.png)
+
+*After mirroring the whole pose.*
+
+
+:::note About the images
+The avatar in the screenshots is the "Nayu" 3D model by Mito Arisaka (https://www.arisakamito.com/).
+:::

@@ -35,3 +35,14 @@ Installing twice on the same root does not add a second child. One Undo step rev
 The child object is tagged **EditorOnly**. The design assumes VRChat SDK builds leave EditorOnly objects out.
 
 We have not yet checked whether the SDK's validation warns about this component. Before you upload, check the SDK's validation result and the contents of the built avatar. 〔要確認〕
+
+## Screenshots
+
+![Handles hide when deselected and come back when you select the avatar again.](/img/screens/module-reselect.png)
+
+*Handles hide when deselected and come back when you select the avatar again.*
+
+
+:::note About the images
+The avatar in the screenshots is the "Nayu" 3D model by Mito Arisaka (https://www.arisakamito.com/).
+:::

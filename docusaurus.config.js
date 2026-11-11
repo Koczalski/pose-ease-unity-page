@@ -64,7 +64,7 @@ const config = {
     },
     footer: {
       style: 'light',
-      copyright: 'pose-ease-unity のドキュメント。Unity は Unity Technologies の商標です。VRChat は VRChat Inc. の商標です。',
+      copyright: '画像のアバター: ナユ 3D モデル（有坂みと）。pose-ease-unity のドキュメント。Unity は Unity Technologies の商標です。VRChat は VRChat Inc. の商標です。',
     },
     prism: {
       theme: prismThemes.github,

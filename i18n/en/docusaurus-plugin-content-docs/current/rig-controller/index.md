@@ -30,3 +30,22 @@ Left handles are blue, right handles are red, and the center is yellow.
 
 - [Display settings and View Preset](./rig-controller/display)
 - [IK/FK switching and mirroring](./rig-controller/ik-fk-mirror)
+
+## Screenshots
+
+![Click to select (the pose does not change). The selected handle is highlighted.](/img/screens/select-ik.png)
+
+*Click to select (the pose does not change). The selected handle is highlighted.*
+
+![Drag an IK box upward to raise the arm.](/img/screens/drag-ik.png)
+
+*Drag an IK box upward to raise the arm.*
+
+![When the hand cannot reach the IK target, a dotted line connects the wrist and the box.](/img/screens/unreachable.png)
+
+*When the hand cannot reach the IK target, a dotted line connects the wrist and the box.*
+
+
+:::note About the images
+The avatar in the screenshots is the "Nayu" 3D model by Mito Arisaka (https://www.arisakamito.com/).
+:::

@@ -27,3 +27,18 @@ description: 手足ごとの IK と FK の切り替え、ポールの向き、�
 ## 既知の制約
 
 - ミラーと、ポーズの適用（Apply Pose）では、Undo で指などの骨が元に戻らない場合があります。
+
+## 画面の例
+
+![「詳細（IK Weight）」を開いたところ。](/img/screens/window-detail.png)
+
+*「詳細（IK Weight）」を開いたところ。*
+
+![Mirror で全身を左右反転したところ。](/img/screens/mirror.png)
+
+*Mirror で全身を左右反転したところ。*
+
+
+:::note 画像について
+画像のアバターは「ナユ 3D モデル」（有坂みと、https://www.arisakamito.com/ ）です。
+:::

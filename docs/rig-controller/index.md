@@ -30,3 +30,22 @@ Rig Controller は、アバターの関節をシーン上の制御点で動か�
 
 - [表示の設定と View Preset](./rig-controller/display)
 - [IK/FK の切り替えとミラー](./rig-controller/ik-fk-mirror)
+
+## 画面の例
+
+![クリックで選ぶ（値は変わらない）。選んだコントローラーは強調される。](/img/screens/select-ik.png)
+
+*クリックで選ぶ（値は変わらない）。選んだコントローラーは強調される。*
+
+![IK の箱を掴んで上へドラッグすると、腕が上がる。](/img/screens/drag-ik.png)
+
+*IK の箱を掴んで上へドラッグすると、腕が上がる。*
+
+![手が IK の目標に届かないときは、手首から箱へ点線が出る。](/img/screens/unreachable.png)
+
+*手が IK の目標に届かないときは、手首から箱へ点線が出る。*
+
+
+:::note 画像について
+画像のアバターは「ナユ 3D モデル」（有坂みと、https://www.arisakamito.com/ ）です。
+:::

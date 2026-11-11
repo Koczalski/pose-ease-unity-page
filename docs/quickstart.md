@@ -26,3 +26,22 @@ Pose Controller ウィンドウ（**Tools > IKFKController > Pose Controller**�
 ## 4. 負荷を確かめる
 
 Pose Controller ウィンドウの **アシスト（解析）** で「有効」にすると、今のポーズの負荷が見られます。詳しくは [アシスト（解析）](./assist) を読んでください。
+
+## 画面の例
+
+![アバターに組み込んだ直後。アバターを選ぶとコントローラーが出る。](/img/screens/module-added.png)
+
+*アバターに組み込んだ直後。アバターを選ぶとコントローラーが出る。*
+
+![組み込んだ直後から、IK の箱をドラッグして手を動かせる。](/img/screens/module-drag.png)
+
+*組み込んだ直後から、IK の箱をドラッグして手を動かせる。*
+
+![Pose Controller ウィンドウ。手足ごとの FK／IK、ミラー、保存。](/img/screens/window.png)
+
+*Pose Controller ウィンドウ。手足ごとの FK／IK、ミラー、保存。*
+
+
+:::note 画像について
+画像のアバターは「ナユ 3D モデル」（有坂みと、https://www.arisakamito.com/ ）です。
+:::

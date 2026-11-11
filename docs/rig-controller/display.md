@@ -22,3 +22,22 @@ View Preset は、シーンビューの背景と光を切り替えて、Rig Cont
 ## 縁取り
 
 Rig Controller の線は、暗い縁の外側に明るい縁が付いています。黒い服にも白い服にも見えやすくするためです。
+
+## 画面の例
+
+![View Preset「シーンのまま」。](/img/screens/view-scene.png)
+
+*View Preset「シーンのまま」。*
+
+![View Preset「ニュートラル」。空と霧を切り、背景を無彩色にする。](/img/screens/view-neutral.png)
+
+*View Preset「ニュートラル」。空と霧を切り、背景を無彩色にする。*
+
+![View Preset「フラット」。陰影とグリッドも切る。](/img/screens/view-flat.png)
+
+*View Preset「フラット」。陰影とグリッドも切る。*
+
+
+:::note 画像について
+画像のアバターは「ナユ 3D モデル」（有坂みと、https://www.arisakamito.com/ ）です。
+:::

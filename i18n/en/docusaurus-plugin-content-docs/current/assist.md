@@ -34,3 +34,18 @@ Assist is a feature in the Pose Controller window. It shows the load of the curr
 - Analysis runs only when you release the drag. The numbers do not change while you drag.
 - The numbers depend on assumptions: the body size and the level boundaries. Do not use them for medical or workplace decisions.
 - The body is assumed to be upright. If the root is strongly tilted, the analysis does not run and the reason is shown.
+
+## Screenshots
+
+![Assist enabled: load markers (white to magenta) and percentages on joints.](/img/screens/assist-scene.png)
+
+*Assist enabled: load markers (white to magenta) and percentages on joints.*
+
+![The Assist section: max load, inferred supports, grounding shift, and more.](/img/screens/assist-window.png)
+
+*The Assist section: max load, inferred supports, grounding shift, and more.*
+
+
+:::note About the images
+The avatar in the screenshots is the "Nayu" 3D model by Mito Arisaka (https://www.arisakamito.com/).
+:::

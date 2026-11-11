@@ -26,3 +26,22 @@ In the Pose Controller window (**Tools > IKFKController > Pose Controller**), pr
 ## 4. Check the load
 
 In the **Assist (analysis)** section of the Pose Controller window, turn on the option to see the load of the current pose. See [Assist (analysis)](./assist).
+
+## Screenshots
+
+![Right after adding the Rig Controller to an avatar. Selecting the avatar shows the handles.](/img/screens/module-added.png)
+
+*Right after adding the Rig Controller to an avatar. Selecting the avatar shows the handles.*
+
+![You can drag an IK box right after adding it.](/img/screens/module-drag.png)
+
+*You can drag an IK box right after adding it.*
+
+![The Pose Controller window: FK/IK per limb, mirror, and saving.](/img/screens/window.png)
+
+*The Pose Controller window: FK/IK per limb, mirror, and saving.*
+
+
+:::note About the images
+The avatar in the screenshots is the "Nayu" 3D model by Mito Arisaka (https://www.arisakamito.com/).
+:::

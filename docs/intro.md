@@ -24,3 +24,18 @@ pose-ease-unity は、Unity エディタの中で VRChat 向けの Humanoid ア�
 ## 読み方
 
 はじめて使う人は、「インストール」「クイックスタート」の順に読んでください。数値の出典と仮定は、それぞれのページに書いてあります。
+
+## 画面の例
+
+![Rig Controller のコントローラー（正面）。FK は細い輪、IK は箱、腰の Root は画面に正対した輪と矢印。](/img/screens/controllers-front.png)
+
+*Rig Controller のコントローラー（正面）。FK は細い輪、IK は箱、腰の Root は画面に正対した輪と矢印。*
+
+![ラベルを常に表示したところ。札は体の外に並び、細い線でコントローラーとつながる。](/img/screens/labels-always.png)
+
+*ラベルを常に表示したところ。札は体の外に並び、細い線でコントローラーとつながる。*
+
+
+:::note 画像について
+画像のアバターは「ナユ 3D モデル」（有坂みと、https://www.arisakamito.com/ ）です。
+:::

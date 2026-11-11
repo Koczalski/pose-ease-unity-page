@@ -22,3 +22,22 @@ Choose "As in scene", or press **Reset**, to restore the original settings.
 ## Outline
 
 Each Rig Controller line has a dark edge with a light edge outside it, so it stays visible on both dark and light clothing.
+
+## Screenshots
+
+![View Preset: Scene (unchanged).](/img/screens/view-scene.png)
+
+*View Preset: Scene (unchanged).*
+
+![View Preset: Neutral (no sky or fog, gray background).](/img/screens/view-neutral.png)
+
+*View Preset: Neutral (no sky or fog, gray background).*
+
+![View Preset: Flat (no lighting or grid).](/img/screens/view-flat.png)
+
+*View Preset: Flat (no lighting or grid).*
+
+
+:::note About the images
+The avatar in the screenshots is the "Nayu" 3D model by Mito Arisaka (https://www.arisakamito.com/).
+:::
