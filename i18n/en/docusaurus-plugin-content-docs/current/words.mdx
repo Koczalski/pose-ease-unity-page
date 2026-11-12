@@ -1,0 +1,69 @@
+---
+title: Pose from words (LLM)
+description: Build a full-body pose from a text instruction, move it toward a lower-load pose, then apply it. It can also describe the current pose in words.
+---
+
+The **言葉で（LLM）** (Words, LLM) section of the Pose Controller window builds three full-body pose candidates from an instruction such as "sitting on the edge of a chair, reading a book". Each candidate is moved toward a lower-load pose while keeping the conditions in the words (hand positions, knee bends, body direction). You compare the candidates as a translucent ghost and apply the one you choose to the avatar.
+
+The LLM runs in llama-server on your own PC. The tool talks only to the server it started itself, at 127.0.0.1. Nothing is sent to an outside service.
+
+## Status
+
+| Feature | Status |
+| --- | --- |
+| Three candidates from an instruction | <Status>Available</Status> |
+| Move toward a lower-load pose while keeping the conditions in the words (on by default) | <Status>Available</Status> |
+| Show the posture the LLM read from the words | <Status>Available</Status> |
+| Compare as a ghost and apply (one Undo reverts it) | <Status>Available</Status> |
+| Describe the current pose in words | <Status>Available</Status> |
+
+## Before you start
+
+- **Turn on Assist (analysis)**: this section shares the body size and pose analysis with Assist. Until Assist has a result, the section shows only a hint. See [Assist](./assist.mdx).
+- **Install llama-server and a model**: use `Tools > IKFKController > LLM Installer (llama-server・モデルの導入)` and check the license before installing. The catalog lists only models whose hash and license we have checked.
+- **GPU**: the recommended model (Ministral-3-14B, Q5_K_M) uses about 10 GB of VRAM. If you load it on the same GPU that Unity renders with, VRAM can run out and Unity can crash. If you have two GPUs, enter the number of the GPU that Unity does not render with in "GPU 番号" (GPU number).
+
+## How to use it
+
+<Steps>
+
+1. Choose a **モデル** (model). At first, the model marked "（推奨）" (recommended) is selected. In measurements during development, it gave poses closest to the words.
+2. Enter the **GPU 番号** (GPU number) and press "サーバーを起動" (Start server). The server row changes to "起動中（`http://127.0.0.1:…`）" (running). Loading takes a few seconds to a few tens of seconds.
+3. Write the action, situation or mood in the **指示** (instruction) box. If you turn on "今のポーズを参考にする" (use the current pose as a reference), the current joint angles are also passed as a reference.
+4. Press "ポーズを作る（3 案）" (Make poses, 3 candidates). In our measurement, three candidates took about 35 seconds. The status line shows the progress.
+5. Choose one candidate in the list. It appears as a ghost (translucent blue). The avatar does not move yet.
+6. Press "適用" (Apply) to put the chosen candidate (the same pose as the ghost) on the avatar. One Undo reverts it. "破棄" (Discard) only removes the candidates and the ghost.
+
+</Steps>
+
+To put the current pose into words, press "説明する" (Describe). A name and a two- or three-sentence description appear. "説明を指示の欄へ写す" (Copy the description to the instruction box) lets you use it as an instruction.
+
+## What the display means
+
+- **読み取った姿勢** (posture read from the words): a summary, in English, of the posture the LLM read from the instruction. When moving toward a lower-load pose, the conditions to keep come from this summary.
+- **Candidate load**: "負荷率 14% → 12%" is the highest load before and after the move. The calculation is the same as in [Comfort Analysis](./comfort-analysis.mdx). When the instruction keeps many joints, the load drops less.
+- **体 前後・左右** (body forward/back, left/right): the tilt of the whole body in the candidate.
+
+## Notes
+
+- Candidates come from an LLM, so some will not match the words. During development we scored 10 sentences that were not used for tuning; 4 of them matched the words.
+- Floor poses such as lying on the back or side, sitting with knees hugged, or sitting cross-legged have not been checked well yet. The pose data used in development has almost none of them.
+- Fingers, collarbones, wrists and toes are not changed.
+- When applying, limbs that were in IK stay in IK. Limbs with an IK weight between IK and FK become FK.
+- The numbers depend on the body size and on assumptions. Do not use them for medical or occupational decisions.
+
+## Screenshots
+
+The instruction is "椅子に浅く腰かけて、両手でひざの上の本を開いて読んでいる" (sitting on the edge of a chair, holding a book open on the knees with both hands and reading). The model is the recommended Ministral-3-14B.
+
+<Gallery>
+
+<Figure src="/img/screens/words-window.png" caption="The Words (LLM) section: recommended model, running server, posture read from the words, the load of three candidates (before → after), Apply and Discard." />
+
+<Figure src="/img/screens/words-ghost.png" caption="Candidate 1 selected: a ghost (translucent blue) of the seated pose. The avatar has not moved yet." />
+
+<Figure src="/img/screens/words-applied.png" caption="After applying. One Undo returns to the previous pose." />
+
+</Gallery>
+
+<ImageCredit />

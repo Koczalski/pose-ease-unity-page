@@ -13,6 +13,7 @@ const sidebars = {
     'avatar-install',
     'comfort-analysis',
     'assist',
+    'words',
     'faq',
     'credits',
     'changelog',
